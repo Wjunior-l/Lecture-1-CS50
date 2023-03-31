@@ -1,0 +1,28 @@
+{% extends "encyclopedia/layout.html" %}
+
+
+{% block title %}
+ New Article
+{% endblock %}
+
+{% block body %}
+    <h1>New Page</h1> 
+    <hr>
+    <hr>
+    <h4>Thank you for your interest in contributing to our Encyclopedia!</h4>
+    <br>
+    
+    
+
+    <form method="POST">
+      {% csrf_token %}
+
+      {{ form.as_p }}
+      
+      <button type="submit" class="btn btn-primary" data-bs-toggle="button">Save</button>
+    </form>
+
+
+{% endblock %}
+    
+

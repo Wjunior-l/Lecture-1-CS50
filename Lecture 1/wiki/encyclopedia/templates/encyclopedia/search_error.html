@@ -1,0 +1,27 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Not Found
+{% endblock %}
+
+{% block body %}
+
+
+<div>
+    <h1>Search Results</h1>
+    <hr>
+    <hr>
+</div>
+
+<div class="alert alert-danger" role="alert">
+    <p>The requested page was not found.</p>
+</div>
+
+<p>
+    <em>The page <strong>"{{ new_page_link }}"</strong> does not exist. <a href="{% url 'wiki:newpage'%}">You can create one by clicking here</a></em>
+</p>
+
+
+
+
+{% endblock %}

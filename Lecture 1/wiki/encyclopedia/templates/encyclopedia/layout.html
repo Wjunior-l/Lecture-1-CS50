@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+       <link rel="stylesheet" href="{% static 'encyclopedia/styles.css' %}">
+        <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/622/PNG/512/wikipedia-logo_icon-icons.com_57053.png" type="image/x-icon">
+    </head>
+    <body>
+        <div class="row">
+            <div class="sidebar col-lg-2 col-md-3">
+
+                <a id='wiki-title-index' href="{% url 'wiki:index'%}">
+                    <h2>Wiki</h2>
+                </a>
+                
+                <form action="{% url 'wiki:search_' %}" method="GET" > 
+                   
+                     
+                 <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="q" placeholder="Search Encyclopedia" aria-label="Search Encyclopedia" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="search_button" type="submit">Search</button>
+                        </div>
+                 </div>
+                    
+                </form>
+                <div>
+                    <a href="{% url 'wiki:index' %}">Home</a>
+                </div>
+                <div>
+                    <a href="{% url 'wiki:newpage' %}">Create New Page</a>
+                </div>
+                <div>
+                    <a href="{% url 'wiki:randompage'%}">Random Page</a>
+                </div>
+                {% block nav %}
+                {% endblock %}
+            </div>
+            <div class="main col-lg-10 col-md-9">
+                {% block body %}
+                
+                {% endblock %}
+            </div>
+        </div>
+
+
+    </body>
+</html>

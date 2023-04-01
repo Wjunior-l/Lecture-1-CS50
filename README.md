@@ -52,7 +52,7 @@ This project only features the tools and practices that were requested.
 
 ## Getting started
 
-1. Clone this repo using git@github.com:Wjunior-l/mycs50projects.git
+1. Clone this repo using <code>git@github.com:Wjunior-l/Lecture-1-CS50.git</code>
 2. Move yourself to the folder.
 3. Run <code>pip install django</code>
 4. Run <code>pip install markdown</code>

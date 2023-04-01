@@ -7,7 +7,7 @@ WIKI
 </h1>
 
 <p align="center">This is the Lecture 1 of CS50 web programming with python and javascript</p>
-<h4>Specifications of the project: </h4>
+<h2>Specifications of the project: </h2>
 <p>
 
 Using Django complete the implementation of your Wiki encyclopedia. You must fulfill the following requirements:

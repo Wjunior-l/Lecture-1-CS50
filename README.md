@@ -12,9 +12,10 @@ WIKI
 
 Using Django complete the implementation of your Wiki encyclopedia. You must fulfill the following requirements:
 
-<p>*Entry Page: Visiting /wiki/TITLE, where TITLE is the title of an encyclopedia entry, should render a page that displays the contents of that encyclopedia entry.</p>
-  <p>*The view should get the content of the encyclopedia entry by calling the appropriate util function.</p>
-  <p>*If an entry is requested that does not exist, the user should be presented with an error page indicating that their requested page was not found.</p>
+  <pre>
+  *Entry Page: Visiting /wiki/TITLE, where TITLE is the title of an encyclopedia entry, should render a page that displays the contents of that encyclopedia entry.
+  *The view should get the content of the encyclopedia entry by calling the appropriate util function.
+  *If an entry is requested that does not exist, the user should be presented with an error page indicating that their requested page was not found.
   *If the entry does exist, the user should be presented with a page that displays the content of the entry. The title of the page should include the name of the         entry.
 *Index Page: Update index.html such that, instead of merely listing the names of all pages in the encyclopedia, user can click on any entry name to be taken directly to that entry page.
 *Search: Allow the user to type a query into the search box in the sidebar to search for an encyclopedia entry.
@@ -32,6 +33,7 @@ Using Django complete the implementation of your Wiki encyclopedia. You must ful
   *Once the entry is saved, the user should be redirected back to that entry’s page.
 *Random Page: Clicking “Random Page” in the sidebar should take user to a random encyclopedia entry.
 *Markdown to HTML Conversion: On each entry’s page, any Markdown content in the entry file should be converted to HTML before being displayed to the user. You may use the python-markdown2 package to perform this conversion, installable via pip3 install markdown2.
+</pre>
 
 </p>
 <p align="center">
@@ -52,8 +54,8 @@ This project only features the tools and practices that were requested.
 
 1. Clone this repo using git@github.com:Wjunior-l/mycs50projects.git
 2. Move yourself to the folder.
-3. Run pip install django.
-4. Run pip install markdown.
+3. Run <code>pip install django</code>
+4. Run <code>pip install markdown</code>
 
 
 
